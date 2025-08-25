@@ -2,7 +2,8 @@ class Todo {
   String? id;
   String title = '';
   bool isFinished = false;
-  Todo({this.id, required this.title, this.isFinished = false});
+  String? userId;
+  Todo({this.id, required this.title, this.isFinished = false, this.userId});
 
   Map<String, dynamic> toJson() {
     return {'title': title, 'isFinished': isFinished};
